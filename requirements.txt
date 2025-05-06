@@ -1,0 +1,7 @@
+gradio
+shutil
+transformers
+pytorch
+qwen-vl-utils[decord]
+tiktoken
+einops transformers_stream_generator
