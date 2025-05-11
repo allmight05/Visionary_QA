@@ -51,3 +51,44 @@ graph LR
     C --> D["Qwen2-VL-2B (8-bit) Model"]
     D --> E["Model Output"]
     E --> F["Gradio Display"]
+
+
+🧪 Installation
+
+    Clone the repository
+
+git clone https://github.com/your-username/vision-qa-bot.git
+cd vision-qa-bot
+
+Create a virtual environment
+
+python -m venv venv
+source venv/bin/activate   # On Windows: .\venv\Scripts\activate
+
+Install dependencies
+
+    pip install -r requirements.txt
+
+    Note: Make sure you have bitsandbytes, transformers, torch, and gradio installed.
+
+▶️ Running the App
+
+python app.py
+
+Then open your browser to http://localhost:7860.
+🖼️ Example Use Cases
+Image Type	Sample Question	Expected Behavior
+Street Scene	“How many people are walking?”	Count visible pedestrians
+Kitchen Interior	“What color is the countertop?”	Identify countertop color
+Document Page	“What is the title of this paper?”	Extract header text
+⚙️ Advanced Usage
+
+    Switch Precision: Toggle between 8-bit and full precision in the load_model() function.
+
+    Batch Inference: Extend the Gradio interface to accept multiple images.
+
+    Custom Models: Replace Qwen2-VL with any Hugging Face–compatible multimodal model.
+
+🤝 Contributing
+
+Contributions are welcome! Please fork the repository and open a pull request. For major changes, open an issue first to discuss what you’d like to change.
