@@ -14,9 +14,9 @@ Experience the model in action:
 
 ## 📚 Table of Contents
 
-- [Project Overview](#-project-overview)  
-- [Model Details](#-model-details)  
-- [System Architecture](#-system-architecture)  
+- [Project Overview]
+- [Model Details] 
+- [System Architecture]
 - [Installation]
 - [Running the App] 
 
