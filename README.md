@@ -52,7 +52,21 @@ graph LR
 
 ## ⚙️ Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/allmight05/Visionary_QA.git
-   cd Visionary_QA
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/vision-qa-bot.git
+cd vision-qa-bot
+
+# 2. Create and activate a virtual environment
+python -m venv venv
+# Windows:
+.\venv\Scripts\activate
+# macOS/Linux:
+source venv/bin/activate
+
+# 3. Install required packages
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+## ▶️ Running the App
