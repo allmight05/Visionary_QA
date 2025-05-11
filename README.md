@@ -17,8 +17,8 @@ Experience the model in action:
 - [Project Overview](#-project-overview)  
 - [Model Details](#-model-details)  
 - [System Architecture](#-system-architecture)  
-- [Installation](#-installation)  
-- [Running the App](#-running-the-app)   
+- [Installation]
+- [Running the App] 
 
 ---
 
