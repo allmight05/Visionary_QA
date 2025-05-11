@@ -47,3 +47,12 @@ graph LR
     C --> D["Qwen2-VL-2B (8-bit) Model"]
     D --> E["Model Output"]
     E --> F["Gradio Display"]
+
+```
+
+## ⚙️ Installation
+
+1.Clone the repository
+
+git clone https://github.com/your-username/vision-qa-bot.git
+cd vision-qa-bot
