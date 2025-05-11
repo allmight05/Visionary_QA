@@ -1,30 +1,56 @@
-# Vision Q&A Bot
+# 🧠 Vision Question Answering using Qwen2-VL 2B
 
-A simple Visual Question Answering application powered by the state-of-the-art Qwen2-VL 2 B-parameter model quantized to 8 bits, with a Gradio web interface for easy image + text interaction.
+This repository contains an implementation of a **Vision-Language Question Answering** system using the **Qwen2-VL 2B** model, a state-of-the-art open-source multimodal model capable of understanding both images and text.
 
-<kbd>
-  <a href="https://www.youtube.com/watch?v=0rbg9O6M0Sk" target="_blank">
-    <img src="https://img.youtube.com/vi/0rbg9O6M0Sk/maxresdefault.jpg" alt="YouTube Demo" width="640">
-  </a>
-</kbd>
+The model is efficiently loaded in **8-bit precision** to reduce memory usage and boost inference speed. A **Gradio-powered interface** enables easy interaction with the model via your browser.
 
-## Features
+---
 
-- **Qwen2-VL-2B** loaded in 8-bit mode for efficient inference on consumer GPUs.  
-- **Gradio** frontend for uploading images, entering questions, and viewing answers in real time.  
-- Simple, modular code for easy extension to other models or UIs.
+## 📽️ Demo
 
-## Getting Started
+Experience the model in action:
 
-### Prerequisites
+[![Watch on YouTube](https://img.youtube.com/vi/0rbg9O6M0Sk/hqdefault.jpg)](https://www.youtube.com/watch?v=0rbg9O6M0Sk)
 
-- Python 3.8+  
-- CUDA 11.7+ (optional, for GPU)  
-- Git
+---
 
-### Installation
+## 📚 Table of Contents
 
-1. Clone this repository (without forking if desired):  
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/vision-qa-bot.git
-   cd vision-qa-bot
+- [Project Overview](#-project-overview)
+- [Model Details](#-model-details)
+- [System Architecture](#-system-architecture)
+- [Installation](#-installation)
+- [Running the App](#-running-the-app)
+- [Example Use Cases](#-example-use-cases)
+- [Advanced Usage](#-advanced-usage)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+---
+
+## 🚀 Project Overview
+
+This project is a demonstration of Vision Question Answering (VQA) using a modern vision-language model. Given an image and a natural language question, the model attempts to understand the context of the image and provide a precise and relevant response.
+
+---
+
+## 🧠 Model Details
+
+- **Model Name:** Qwen2-VL-2B  
+- **Multimodal:** Vision + Text  
+- **Loaded with:** `AutoModelForVision2Seq` (from Hugging Face)  
+- **Quantization:** 8-bit using `bitsandbytes`  
+- **Tokenizer:** QwenTokenizer  
+- **Image Processor:** QwenImageProcessor
+
+---
+
+## 🛠️ System Architecture
+
+```mermaid
+graph LR
+    A[User Uploads Image & Asks Question] --> B[Gradio UI]
+    B --> C[Preprocessing (Tokenizer + ImageProcessor)]
+    C --> D[Qwen2-VL-2B (8bit) Model]
+    D --> E[Model Output]
+    E --> F[Gradio Display]
