@@ -1,8 +1,6 @@
 # 🧠 Vision Question Answering using Qwen2-VL 2B
 
-This repository contains an implementation of a **Vision-Language Question Answering** system using the **Qwen2-VL 2B** model, a state-of-the-art open-source multimodal model capable of understanding both images and text.
-
-The model is efficiently loaded in **8-bit precision** to reduce memory usage and boost inference speed. A **Gradio-powered interface** enables easy interaction with the model via your browser.
+This repository contains an implementation of a **Vision-Language Question Answering** system powered by the **Qwen2-VL 2B** model, loaded in **8-bit precision** for efficient inference, and deployed via a **Gradio** interface.
 
 ---
 
@@ -16,32 +14,31 @@ Experience the model in action:
 
 ## 📚 Table of Contents
 
-- [Project Overview](#-project-overview)
-- [Model Details](#-model-details)
-- [System Architecture](#-system-architecture)
-- [Installation](#-installation)
-- [Running the App](#-running-the-app)
-- [Example Use Cases](#-example-use-cases)
-- [Advanced Usage](#-advanced-usage)
-- [Contributing](#-contributing)
-- [License](#-license)
+- [Project Overview](#-project-overview)  
+- [Model Details](#-model-details)  
+- [System Architecture](#-system-architecture)  
+- [Installation](#-installation)  
+- [Running the App](#-running-the-app)  
+- [Example Use Cases](#-example-use-cases)  
+- [Advanced Usage](#-advanced-usage)  
+- [Contributing](#-contributing)  
+- [License](#-license)  
 
 ---
 
 ## 🚀 Project Overview
 
-This project is a demonstration of Vision Question Answering (VQA) using a modern vision-language model. Given an image and a natural language question, the model attempts to understand the context of the image and provide a precise and relevant response.
+This project demonstrates a modern Vision Question Answering (VQA) pipeline. Users upload an image and ask a natural language question; the system retrieves and processes the image, then returns a concise answer.
 
 ---
 
 ## 🧠 Model Details
 
-- **Model Name:** Qwen2-VL-2B  
-- **Multimodal:** Vision + Text  
-- **Loaded with:** `AutoModelForVision2Seq` (from Hugging Face)  
-- **Quantization:** 8-bit using `bitsandbytes`  
-- **Tokenizer:** QwenTokenizer  
-- **Image Processor:** QwenImageProcessor
+- **Model**: Qwen2-VL-2B (2 billion parameters)  
+- **Quantization**: 8-bit via `bitsandbytes`  
+- **Tokenizer**: QwenTokenizer  
+- **Image Processor**: QwenImageProcessor  
+- **Interface**: Gradio for image+text input and answer display  
 
 ---
 
@@ -49,8 +46,8 @@ This project is a demonstration of Vision Question Answering (VQA) using a moder
 
 ```mermaid
 graph LR
-    A[User Uploads Image & Asks Question] --> B[Gradio UI]
-    B --> C[Preprocessing (Tokenizer + ImageProcessor)]
-    C --> D[Qwen2-VL-2B (8bit) Model]
-    D --> E[Model Output]
-    E --> F[Gradio Display]
+    A["User Uploads Image & Asks Question"] --> B["Gradio UI"]
+    B --> C["Preprocessing: Tokenizer and Image Processor"]
+    C --> D["Qwen2-VL-2B (8-bit) Model"]
+    D --> E["Model Output"]
+    E --> F["Gradio Display"]
