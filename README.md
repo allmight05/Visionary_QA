@@ -52,7 +52,7 @@ graph LR
 
 ## ⚙️ Installation
 
-1.Clone the repository
-
-git clone https://github.com/your-username/vision-qa-bot.git
-cd vision-qa-bot
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/vision-qa-bot.git
+   cd vision-qa-bot
