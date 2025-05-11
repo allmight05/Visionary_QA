@@ -54,5 +54,5 @@ graph LR
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/vision-qa-bot.git
-   cd vision-qa-bot
+   git clone https://github.com/allmight05/Visionary_QA.git
+   cd Visionary_QA
