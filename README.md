@@ -49,6 +49,7 @@ graph LR
     E --> F["Gradio Display"]
 
 ```
+---
 
 ## ⚙️ Installation
 
@@ -68,6 +69,7 @@ source venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
+---
 
 ## ▶️ Running the App
 
@@ -78,4 +80,5 @@ python app.py
 # 2. Access the Gradio interface
 #    Open your browser and go to:
 #    http://localhost:7860
-
+```
+---
